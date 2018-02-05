@@ -5,4 +5,8 @@
     <string name="_3_points">+3 Points</string>
     <string name="_2_points">+2 Points</string>
     <string name="free_throw">Free throw</string>
+    <string name="team_b">Team B</string>
+    <string name="_reset">Reset</string>
+    <string name="Boston_Celtics">Boston Celtics</string>
+    <string name="Houston_Rockets">Houston Rockets</string>
 </resources>
