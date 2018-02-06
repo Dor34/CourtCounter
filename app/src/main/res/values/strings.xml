@@ -7,6 +7,6 @@
     <string name="free_throw">Free throw</string>
     <string name="team_b">Team B</string>
     <string name="_reset">Reset</string>
-    <string name="Boston_Celtics">Boston Celtics</string>
-    <string name="Houston_Rockets">Houston Rockets</string>
+    <string name="spinner_teamA">select_teamA</string>
+    <string name="spinner_teamB">select_teamB</string>
 </resources>
