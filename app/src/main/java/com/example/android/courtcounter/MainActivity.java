@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         setContentView (R.layout.activity_main);
 
         //Spinner element
-        Spinner spinnerA = (Spinner) findViewById (R.id.spinnerA);
-        Spinner spinnerB = (Spinner) findViewById (R.id.spinnerB);
+        Spinner spinnerA = findViewById (R.id.spinnerA);
+        Spinner spinnerB = findViewById (R.id.spinnerB);
 
         //Spinner click listener
         spinnerA.setOnItemSelectedListener (this);
@@ -32,19 +32,18 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
 
         //Spinner Drop down elements
         List<String> teams = new ArrayList<> ();
-        final boolean add = teams.add ("Houston Rockets");
+        final boolean add = teams.add ("None Selected");
         final boolean add1 = teams.add ("Boston Celtics");
         final boolean add2 = teams.add ("Oklahoma City Thunder");
         final boolean add3 = teams.add ("New York Knicks");
         final boolean add4 = teams.add ("Golden State Warriors");
         final boolean add5 = teams.add ("Cleveland Cavaliers");
-        final boolean add6 = teams.add ("None Selected");
+        final boolean add6 = teams.add ("Houston Rockets");
 
         //Creating adapter for spinner
         final String [] list = {"None Selected", "Houston Rockets", "Boston Celtics", "Oklahoma City Thunder", "New York Knicks", "Golden State Warriors", "Cleveland Cavaliers"};
 
-        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(
-                this, android.R.layout.simple_spinner_item, teams);
+        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<> (this, android.R.layout.simple_spinner_item, teams);
         spinnerA.setAdapter(spinnerArrayAdapter);
         spinnerB.setAdapter(spinnerArrayAdapter);
     }
@@ -98,14 +97,14 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
      * Displays the given score for Team A.
      */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
     /**
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
